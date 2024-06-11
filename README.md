@@ -1,4 +1,6 @@
 # Doc Encryptor
+![ico](https://github.com/ilyademidow/doc_encryptor/blob/main/ico.jpg)
+
 A Python CLI script for user-friendly file encryption and decryption using the industry-standard AES in CBC mode with a 128-bit key for encryption. HMAC using SHA256 for authentication algorithm.
 
 Safeguard your files for backup, cloud storage, or secure exchange. Unlike some "black box" solutions, you can see exactly what happens to your data - it stays encrypted and never shared to third parties. Take back control of your data security.
