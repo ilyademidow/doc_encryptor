@@ -40,9 +40,11 @@ Where
    
    If your file is placed in the same directory where you run the script, otherwise it needs to use full path as shown in second example `/home/user1/Downloads/my_diary.txt.enc`
 
-Encrypt text:
 
 **BE CAREFULL:** all text which typed in console remains in console history. Consider approach to clear console history after
+
+Encrypt text:
+
 ```
 ./doc_enc_dec.sh enc -t "my super sensitive data"
 ```
