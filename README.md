@@ -10,14 +10,28 @@ Safeguard your files for backup, cloud storage, or secure exchange. Unlike some 
 ### License: MIT
 
 
-## How to use
+### Prerequisites:
+- You have installed Python3
+
+# How to use
+
+### "Installation"
+Download whole this project and give execution permissions to `doc_enc_dec.sh`. _In Linux and MacOS systems it can be performed like:_
+```
+chmod +x doc_enc_dec.sh
+```
+
+Ready, now you can use it!
+
+---
+
 Encrypt file:
 ```
-python3 e my_diary.txt
+doc_enc_dec.sh e my_diary.txt
 ```
 Decrypt file: 
 ```
-python3 d /home/user1/Downloads/my_diary.txt.enc
+doc_enc_dec.sh d /home/user1/Downloads/my_diary.txt.enc
 ```
 
 Where `e` and `d` are actions. `e` means encrypt, `d` means decrypt
