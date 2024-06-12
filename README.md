@@ -27,11 +27,11 @@ Ready, now you can use it!
 
 Encrypt file:
 ```
-doc_enc_dec.sh e my_diary.txt
+./doc_enc_dec.sh e my_diary.txt
 ```
 Decrypt file: 
 ```
-doc_enc_dec.sh d /home/user1/Downloads/my_diary.txt.enc
+./doc_enc_dec.sh d /home/user1/Downloads/my_diary.txt.enc
 ```
 
 Where `e` and `d` are actions. `e` means encrypt, `d` means decrypt
