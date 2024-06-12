@@ -26,13 +26,43 @@ Ready, now you can use it!
 
 Encrypt file:
 ```
-./doc_enc_dec.sh e my_diary.txt
+./doc_enc_dec.sh enc -f my_diary.txt
 ```
 Decrypt file: 
 ```
-./doc_enc_dec.sh d /home/user1/Downloads/my_diary.txt.enc
+./doc_enc_dec.sh dec -f /home/user1/Downloads/my_diary.txt.enc
 ```
 
-Where `e` and `d` are actions. `e` means encrypt, `d` means decrypt
+Where 
+- `enc` and `dec` are actions (`enc` means encrypt, `dec` means decrypt)
+- `-f` are content source (`-f` means file)
+- `my_diary.txt` is example of your file name 
+   
+   If your file is placed in the same directory where you run the script, otherwise it needs to use full path as shown in second example `/home/user1/Downloads/my_diary.txt.enc`
 
-`my_diary.txt` is example of your file name if your file is placed in the same directory where you run the script, otherwise it needs to use full path as shown in second example `/home/user1/Downloads/my_diary.txt.enc`
+Encrypt text:
+
+**BE CAREFULL:** all text which typed in console remains in console history. Consider approach to clear console history after
+```
+./doc_enc_dec.sh enc -t "my super sensitive data"
+```
+Decrypt text:
+```
+./doc_enc_dec.sh dec -t gAAAAABmahVFCt6hJM4u0irgKLVYBilsnyjSyDXi5wpx2x0LMpfiPp-PW3g31GQ4i17KHY0BYgDeWLIopExK56y7hPpQrth-c37vNp2emaNWSZT2dg_pv2w=
+```
+
+or also if text is very long you can put it in STDIN
+```
+./doc_enc_dec.sh dec -t
+```
+paste text bellow then press `Enter` and then `Ctrl+D`
+
+And of course you can use pipe commands as 
+```
+cat my_diary.txt | ./doc_enc_dec.sh enc -t
+```
+and so on
+
+
+### Appendix
+Also you can use another aliases for encryption as `e`, `enc`, `encr`, `encrypt` and for decryption as `d`, `dec`, `decr`, `decrypt`
