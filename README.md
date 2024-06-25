@@ -39,10 +39,9 @@ Where
    
    If your file is placed in the same directory where you run the script, otherwise it needs to use full path `/home/user1/Downloads/my_diary.txt.enc` as it was shown in second example 
 
-
-**BE CAREFULL:** all text which typed in console remains in console history. Consider approach to clear console history afterwards 
-
 ### Also it can encrypt plain text
+
+**BE CAREFULL:** all text which typed in console remains in console history. Consider approach to clear console history afterwards
 
 Encrypt text:
 
