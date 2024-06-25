@@ -12,8 +12,6 @@ Safeguard your documents for backup, cloud storage, or secure exchange. Unlike s
 ### Prerequisites:
 - You have installed Python3
 
-# How to use
-
 ### "Installation"
 Download whole this project and give execution permissions to `doc_enc_dec.sh`. _In Linux and MacOS systems it can be performed like:_
 ```
@@ -23,6 +21,7 @@ chmod +x doc_enc_dec.sh
 Ready, now you can use it!
 
 ---
+# How to use
 
 Encrypt file:
 ```
@@ -38,10 +37,12 @@ Where
 - `-f` are content source (`-f` means file)
 - `my_diary.txt` is example of your file name 
    
-   If your file is placed in the same directory where you run the script, otherwise it needs to use full path as shown in second example `/home/user1/Downloads/my_diary.txt.enc`
+   If your file is placed in the same directory where you run the script, otherwise it needs to use full path `/home/user1/Downloads/my_diary.txt.enc` as it was shown in second example 
 
 
-**BE CAREFULL:** all text which typed in console remains in console history. Consider approach to clear console history after
+**BE CAREFULL:** all text which typed in console remains in console history. Consider approach to clear console history afterwards 
+
+### Also it can encrypt plain text
 
 Encrypt text:
 
